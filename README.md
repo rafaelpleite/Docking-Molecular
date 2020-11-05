@@ -26,6 +26,6 @@ O resultados foram,
 
 Vamos analisar o primeiro modo.
 
-![Image of Yaktocat](https://imgur.com/c9faf56d-bd3c-4d1d-81ba-0e7634e1b767)
+
 
 
