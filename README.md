@@ -26,10 +26,32 @@ O resultados foram,
 
 Vamos analisar o primeiro modo.
 
-![Test](Image/0411-Resultado.PNG)
+![Resultado0411](Image/0411-Resultado.PNG)
 
 Temos duas ligações no sítio ativo porém a energia de ligação é muito baixa.
 Para continuar vamos fazer um docking em várias partes da proteína e avaliar se existem outras posições em que a ligação pode ser realizada com um melhor gasto de energia. Para isso irei utilizar o algoritmo "Algoritmo Simulações AutoDock Vina"
+
+## *05/11* 
+Durante a noite eu deixei meu PC rodando o docking em várias partes da proteína e levou cerca de uma hora para completar o processo. Com isso utilizei um notebook para realizar a análise desses dados, foram 3362 de resultados.
+
+|      |         x |         y |         z |      RMSD | Energy |
+|-----:|----------:|----------:|----------:|----------:|-------:|
+| 1932 | 60.485769 | 23.419552 | 18.576984 |  0.000000 |   -8.9 |
+| 1941 | 60.464784 | 23.426756 | 18.555649 |  0.040864 |   -8.9 |
+| 1933 | 57.437527 | 23.533292 | 16.284492 |  7.519324 |   -8.8 |
+| 1761 | 45.786486 | 47.644405 | -8.122137 | 39.249817 |   -8.8 |
+| 2058 | 55.825401 | 40.619856 | 28.457556 | 20.667280 |   -8.7 |
+
+Como podem ver existe uma região de mínimo para a energia, porém não é no sítio ativo, tomei o melhor desempenho energético como o referencial para o cálculo do RMSD. A energia nessa região de mínimo chega a ser 50% menor que a energia no sítio ativo, aparentemente o ligante não é bom para a PLPro. Porém, vamos continuar com a nossa análise.
+
+Filtrando os dados <= -6.0 Kcal/mol ploto um scatterplot para visualizar a dispersão dos dados. Abaixo temos o plot para XY.
+
+![DispersaoXY0511](Image/XY0511.png)
+
+Como podem ver existe uma vasta região com energias próximas a -6.0. O sítio ativo da proteína fica na região x, y, z = 46, 35, 38. Em regiões próximas existem lugar com uma melhor afinidade energética.
+
+Além disso, realizei duas clusterizações dos dados uma ultilizando o KMeans e outra com o DBSCAN. Utilizei o DBSCAN, pois é desconsiderado pontos muito foca do cluster, tais pontos são tratados como ruído. Por fim, normalizei os dados para que todos tenham o mesmo peso, ou seja, as coordenadas x, y e z, energia e RMSD possuem o mesmo peso na hora de calculas os clusters. Creio que a priori é a melhor forma, pois existem valores de RMSD muito altos que porem prejuticas os algoritmos de cluster.
+
 
 
 
