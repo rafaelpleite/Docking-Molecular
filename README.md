@@ -11,7 +11,7 @@ Para consulta posterior, ultilizando o AutodockVina tomei exhaustiveness = 100.
 
 O resultados foram,
 
-* mode |   affinity | dist from best mode 
+* mode |   affinity | dist from| best mode 
 *      | (kcal/mol) | rmsd l.b.| rmsd u.b. 
 *    1 |       -6.0 |   0.000  |    0.000 
 *    2 |       -6.0 |   2.575  |    3.445 
