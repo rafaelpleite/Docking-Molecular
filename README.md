@@ -26,7 +26,7 @@ O resultados foram,
 
 Vamos analisar o primeiro modo.
 
-![Test](image/0411-Resultado.PNG)
+![Test](Image/0411-Resultado.PNG)
 
 
 
