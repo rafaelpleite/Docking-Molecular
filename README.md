@@ -7,7 +7,7 @@ Repositório com algoritmos e notebooks de docking molecular.
 A partir de hoje começo um diário de bordo narrando parte do meu trabalho no projeto de docking molecular. Alguns códigos já foram criados antes do início desse diário, porém pretendo apresentar isto posteriormente.
 Hoje, vou começar apresentando o resultado de um docking que eu fiz na PLPro do vírus Sars-Cov-2 utilizando o fármaco Luteolin, que a priori é um ligante que apresentou bons resultados nos artigos que eu li. 
 Segundo o artigo "The SARS-coronavirus papain-like protease: Structure, function and inhibition by designed antiviral compounds" o sítio ativo do SARS-CoV-1 fica localizando na região Cys112–His273–Asp287, então o docking será feito nessa região. Perceba que, esse não é o SARS-CoV-2, mas sim um vírus anterior muito parecido com esse da epidemia de 2020.
-Para consulta posterior, ultilizando o AutodockVina tomei exhaustiveness = 100.
+Para consulta posterior, ultilizando o AutodockVina tomei exhaustiveness = 100. Proteína PDB 6wuu.
 
 O resultados foram,
 
