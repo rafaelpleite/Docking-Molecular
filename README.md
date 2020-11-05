@@ -48,9 +48,21 @@ Filtrando os dados <= -6.0 Kcal/mol ploto um scatterplot para visualizar a dispe
 
 ![DispersaoXY0511](Image/XY0511.png)
 
-Como podem ver existe uma vasta região com energias próximas a -6.0. O sítio ativo da proteína fica na região x, y, z = 46, 35, 38. Em regiões próximas existem lugar com uma melhor afinidade energética, como por exemplo na região uma das simulações gerou um resultado com centro de massa no ponto x, y, z = 45.786486,	47.644405,	-8.122137 ?????? (Z) MUITO LONGE, CRIAR UMA BOX PARA ANALISAR NESSA REGIÂO MELHORES RESULTADOS, IE, [40, 50][30, 40][35, 45]
+Como podem ver existe uma vasta região com energias próximas a -6.0. O sítio ativo da proteína fica na região x, y, z = 46, 35, 38. 
 
-Além disso, realizei duas clusterizações dos dados uma ultilizando o KMeans e outra com o DBSCAN. Utilizei o DBSCAN, pois é desconsiderado pontos muito foca do cluster, tais pontos são tratados como ruído. Por fim, normalizei os dados para que todos tenham o mesmo peso, ou seja, as coordenadas x, y e z, energia e RMSD possuem o mesmo peso na hora de calculas os clusters. Creio que a priori é a melhor forma, pois existem valores de RMSD muito altos que porem prejuticas os algoritmos de cluster.
+Ademais, para continuar a análise implementei umas nova funcionalidades ao notebook. A primeira é a vizualização da distribuição de pontos em 3d com o plotly, com isso é possível obter uma melhor vizuazação da distribuição das energias em relação a distribuição espacial como na imagem abaixo.
+
+![3dscatter0511](Image/3dscatter0511.PNG)
+
+Porém, é vizivel que existem regiões próximas com uma melhor afinidade energética, então implementei outra nova funcionalizade para selecionar uma caixa em um intervalo do meu DataFrame determinado por um array 3x2, ie, [[x0, x1],[y0, y1],[z0, z1]] para uma análise mais apurada dos resultados. Após isso, foi possível vizuazar que existe uma região próxima do sítio ativo com melhores resultados, por exemplo uma das simulações gerou um resultado com centro de massa no ponto x, y, z = 53.89, 40.30, 28.81 com energia de -8.2. Abaixo vai o gráfico obtido com essa implementação,
+
+![regiaocomenergias0511](Image/regiaocomenergias.PNG)
+
+Além disso, realizei duas clusterizações dos dados uma ultilizando o KMeans e outra com o DBSCAN. Utilizei o DBSCAN, pois é desconsiderado pontos muito fora do cluster, tais pontos são tratados como ruído. Por fim, normalizei os dados para que todos tenham o mesmo peso, ou seja, as coordenadas x, y e z, energia e RMSD possuem o mesmo peso na hora de calculas os clusters. Creio que a priori é a melhor forma, pois existem valores de RMSD muito altos que porem prejudicar os algoritmos de cluster, mas preciso me aprofundar mais nessa questão. Aqui vai os resultados.
+
+![XY_CLUSTER_NORMAL0511](Image/XY_CLUSTER_NORMAL0511.png)
+![XY_CLUSTER_NORMAL_DBSCAN0511](Image/XY_CLUSTER_NORMAL_DBSCAN0511.png)
+
 
 
 
