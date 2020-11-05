@@ -48,7 +48,7 @@ Filtrando os dados <= -6.0 Kcal/mol ploto um scatterplot para visualizar a dispe
 
 ![DispersaoXY0511](Image/XY0511.png)
 
-Como podem ver existe uma vasta região com energias próximas a -6.0. O sítio ativo da proteína fica na região x, y, z = 46, 35, 38. Em regiões próximas existem lugar com uma melhor afinidade energética.
+Como podem ver existe uma vasta região com energias próximas a -6.0. O sítio ativo da proteína fica na região x, y, z = 46, 35, 38. Em regiões próximas existem lugar com uma melhor afinidade energética, como por exemplo na região uma das simulações gerou um resultado com centro de massa no ponto x, y, z = 45.786486,	47.644405,	-8.122137 ?????? (Z) MUITO LONGE, CRIAR UMA BOX PARA ANALISAR NESSA REGIÂO MELHORES RESULTADOS, IE, [40, 50][30, 40][35, 45]
 
 Além disso, realizei duas clusterizações dos dados uma ultilizando o KMeans e outra com o DBSCAN. Utilizei o DBSCAN, pois é desconsiderado pontos muito foca do cluster, tais pontos são tratados como ruído. Por fim, normalizei os dados para que todos tenham o mesmo peso, ou seja, as coordenadas x, y e z, energia e RMSD possuem o mesmo peso na hora de calculas os clusters. Creio que a priori é a melhor forma, pois existem valores de RMSD muito altos que porem prejuticas os algoritmos de cluster.
 
