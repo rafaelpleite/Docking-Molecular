@@ -66,3 +66,11 @@ Além disso, realizei duas clusterizações dos dados uma utilizando o KMeans e 
 Comparando com o gráfico "Luteolin PLPro - X Y" no começo do diário 05/11 é difícil tirar alguma informação importante de ambos os clusters, talvez eu precise implementar os algoritmos de cluster de uma melhor forma priorizando a energia, ou talvez considerar os eixos das coordenas como uma esfera de raio, r^2 = x^2 + y^2 + z^2 com origem no sítio ativo. Isso será analisado e em breve divulgarei uma forma melhor de fazer isso.
 
 Por fim, aparentemente os resultados para o docking do Luteoin na PLPro são inconsistentes, pois os valores energéticos são piores quando comparados com outras regiões além do sítio ativo.
+
+Fica aqui algumas ideias de algoritmos para facilitar o trabalho com os dados: 
+Criar um único arquivo .pdqbt com os resultados;
+Encontrar uma melhor maneira de clusterizar o resultados;
+Aprimorar as funções que analisam .pdbqt para não precisarem do número de átomos;
+Plotar a proteína com o ligante pelo notebook usando bibliotecas de biologia computacional;
+Criar um gui para outras pessoas poderem interagir com os algoritmos;
+Procurar uma forma de usar CPU e GPU para os cálculos com o Vina ao invés de apenas CPU;
