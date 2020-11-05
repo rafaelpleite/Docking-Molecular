@@ -24,7 +24,7 @@ O resultados foram,
 | 8       | -5.6              | 1.296      | 1.599     |
 | 9       | -5.4              | 2.849      | 4.265     |
 
-Vamos analisar o primeiro modo.
+Vamos analisar o primeiro modo (repare que houve um shift, uma subtração de menos um na numeração dos aminoácidos).
 
 ![Resultado0411](Image/0411-Resultado.PNG)
 
@@ -63,9 +63,6 @@ Além disso, realizei duas clusterizações dos dados uma ultilizando o KMeans e
 ![XY_CLUSTER_NORMAL0511](Image/XY_CLUSTER_NORMAL0511.png)
 ![XY_CLUSTER_NORMAL_DBSCAN0511](Image/XY_CLUSTER_NORMAL_DBSCAN0511.png)
 
+Comparando com o gráfico "Luteolin PLPro - X Y" no começo do diário 05/11 é dificil tirar alguma informação importante de ambos os clusters, talvez eu precise implementar os algoritmos de cluster de uma melhor forma priorizando a energia, ou talvez considerar os eixos das coordenas como uma esfera de raio, r^2 = x^2 + y^2 + z^2 com origem no sítio ativo. Isso será análisado e em breve divulgarei uma forma melhor de fazer isso.
 
-
-
-
-
-
+Por fim, aparentemente os resultados para o docking do Luteoin na PLPro são inconsistentes, pois os valores energéticos são piores quando comparados com outras regioes além do sítio ativo.
