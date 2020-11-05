@@ -26,6 +26,9 @@ O resultados foram,
 
 Vamos analisar o primeiro modo.
 
+![](image/0411-Resultado.PNG)
+
+
 
 
 
