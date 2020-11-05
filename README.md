@@ -28,6 +28,9 @@ Vamos analisar o primeiro modo.
 
 ![Test](Image/0411-Resultado.PNG)
 
+Temos duas ligações no sítio ativo porém a energia de ligação é muito baixa.
+Para continuar vamos fazer um docking em várias partes da proteína e avaliar se existem outras posições em que a ligação pode ser realizada com um melhor gasto de energia. Para isso irei utilizar o algoritmo "Algoritmo Simulações AutoDock Vina"
+
 
 
 
