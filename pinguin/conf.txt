@@ -1,6 +1,6 @@
 receptor = proteina.pdbqt
 ligand = ligante.pdbqt
-center_x = 2.5
+center_x = 2.4
 center_y = 6.5
 center_z = -7.5
 size_x = 22.5
