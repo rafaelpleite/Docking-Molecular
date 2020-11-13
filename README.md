@@ -86,8 +86,8 @@ Procurar uma forma de usar CPU e GPU para os cálculos com o Vina ao invés de a
 Hoje eu implementei um algoritmo chamado "joinpdbqt.py" que recebe um diretório, lê todos os arquivos .pdbqt e retorna apenas um arquivo .pqdbt. O código ficou muito bem escrito, creio que o uso do enumerate ajudou o código a fica com um bom clean code. Além do mais, como essa semana está corrida não consiguirei me dedicar muito ao projeto, mas a partir daqui vou tentar analisar de forma mais profunda os resultados do docking da semana passada.
 Na análise da semana passada tudo parecia perdido, o resultado enégico para o sítio ativo estava péssimo. Então após conversar com o professor Marcos resolvi olhar para o ligante que vem junto com a proteína PLPRO que é chamada de 6WUU no site Protein Data Bank que é o VIR 250. Procurando um resultado de docking proxímo a esse sítio obtive o seguinte resultado para de interação.
 
-![RES1211](Image/RES1211.png)
-Com valor energético -7.7, melhor que para o sítio ativo.
+![RES1211](Image/RES1211.PNG)
+A figura da esquerda representa o ligante VIR250, enquanto que a da direita é o Luteolin. O resultado da direita obteve um valor energético -7.7, melhor que para o resultado estudando no sítio ativo de -6.0.
 
 A priori isso pode representar algum avanço, porém preciso analisar melhor esse resultado e também encontrar alguma forma de encontrar um resultado melhor realizando mais dockings nesta região.
 
