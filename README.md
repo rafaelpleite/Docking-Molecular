@@ -4,10 +4,7 @@ Repositório com algoritmos e notebooks de docking molecular.
 # *Diário de Bordo* 
 
 ## *04/11* 
-A partir de hoje começo um diário de bordo narrando parte do meu trabalho no projeto de docking molecular. Alguns códigos já foram criados antes do início desse diário, porém pretendo apresentar isto posteriormente.
-Hoje, vou começar apresentando o resultado de um docking que eu fiz na PLPro do vírus Sars-Cov-2 utilizando o fármaco Luteolin, que a priori é um ligante que apresentou bons resultados nos artigos que eu li. 
-Segundo o artigo "The SARS-coronavirus papain-like protease: Structure, function and inhibition by designed antiviral compounds" o sítio ativo do SARS-CoV-1 fica localizando na região Cys112–His273–Asp287, então o docking será feito nessa região. Perceba que, esse não é o SARS-CoV-2, mas sim um vírus anterior muito parecido com esse da epidemia de 2020.
-Para consulta posterior, utilizando o AutodockVina tomei exhaustiveness = 100. Proteína PDB 6wuu.
+A partir de hoje começo um diário de bordo narrando parte do meu trabalho no projeto de docking molecular. Alguns códigos já foram criados antes do início desse diário, porém pretendo apresentar isto posteriormente. Hoje, vou começar apresentando o resultado de um docking que eu fiz para a proteína PLPro do vírus Sars-Cov-2 utilizando o fármaco Luteolin (https://pubchem.ncbi.nlm.nih.gov/compound/Luteolin), que a priori é um ligante que apresentou bons resultados nos artigos que eu li. Segundo o artigo "The SARS-coronavirus papain-like protease: Structure, function and inhibition by designed antiviral compounds" (https://doi.org/10.1016/j.antiviral.2014.12.015) o sítio ativo do SARS-CoV-1 fica localizando na região Cys112–His273–Asp287, então o docking será feito nessa região. Perceba que, esse não é o SARS-CoV-2, mas sim um vírus anterior (SARS-Cov-1) de 2002 muito parecido com esse da epidemia de 2020. Para consulta posterior, utilizando o AutodockVina tomei exhaustiveness = 100. Proteína PDB 6wuu (https://www.rcsb.org/structure/6WUU).
 
 Os resultados foram,
 
@@ -29,10 +26,11 @@ Vamos analisar o primeiro modo (repare que houve um shift, uma subtração de me
 ![Resultado0411](Image/0411-Resultado.PNG)
 
 Temos duas ligações no sítio ativo, porém a energia de ligação é muito baixa.
-Para continuar vamos fazer um docking em várias partes da proteína e avaliar se existem outras posições em que a ligação pode ser realizada com um melhor gasto de energia. Para isso irei utilizar o algoritmo "Algoritmo Simulações AutoDock Vina"
+Para continuar vamos fazer um docking em várias partes da proteína e avaliar se existem outras posições em que a ligação pode ser realizada com um melhor gasto de energia. Para isso irei utilizar o algoritmo "Algoritmo Simulações AutoDock Vina" https://github.com/rafaelpleite/Docking-Molecular/blob/main/SimularAutodock.py .
 
 ## *05/11* 
-Durante a noite eu deixei meu PC rodando o docking em várias partes da proteína e levou cerca de uma hora para completar o processo. Com isso utilizei um notebook para realizar a análise desses dados, foram 3362 de resultados.
+Durante a noite eu deixei meu PC rodando o docking em várias partes da proteína e levou cerca de uma hora para completar o processo. As configurações do meu PC são: Ryzen 1600AF; 8 GB de ram DDR4; RX 570 8GB.
+Com isso utilizei um notebook para realizar a análise desses dados, foram 3362 de resultados.
 
 |      |         x |         y |         z |      RMSD | Energy |
 |-----:|----------:|----------:|----------:|----------:|-------:|
@@ -42,7 +40,7 @@ Durante a noite eu deixei meu PC rodando o docking em várias partes da proteín
 | 1761 | 45.786486 | 47.644405 | -8.122137 | 39.249817 |   -8.8 |
 | 2058 | 55.825401 | 40.619856 | 28.457556 | 20.667280 |   -8.7 |
 
-Como podem ver existe uma região de mínimo para a energia, porém não é no sítio ativo, tomei o melhor desempenho energético como o referencial para o cálculo do RMSD. A energia nessa região de mínimo chega a ser 50% menor que a energia no sítio ativo, aparentemente o ligante não é bom para a PLPro. Porém, vamos continuar com a nossa análise.
+Como podem ver existe uma região de mínimo para a energia, porém não é no sítio ativo, tomei o melhor desempenho energético como o referencial para o cálculo do RMSD, ou seja, o ligante 1932 da tabela acima. A energia nessa região de mínimo chega a ser 50% menor que a energia no sítio ativo, aparentemente o ligante não é bom para a PLPro. Porém, vamos continuar com a nossa análise.
 
 Filtrando os dados <= -6.0 Kcal/mol ploto um scatterplot para visualizar a dispersão dos dados. Abaixo temos o plot para XY.
 
