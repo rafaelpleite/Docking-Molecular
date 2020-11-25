@@ -87,5 +87,8 @@ Na análise da semana passada tudo parecia perdido, o resultado enégico para o 
 ![RES1211](Image/RES1211.PNG)
 A figura da esquerda representa o ligante VIR250, enquanto que a da direita é o Luteolin. Perceba que ele interage com os aminoácidos MET208 e ASP164. O resultado da direita obteve um valor energético -7.7, melhor que para o resultado estudando no sítio ativo de -6.0.
 
+![2511ATT3D](Image/2511ATT3D.PNG)
+Em amarelo temos o Luteoin e o outro é o VIR250, perceba que estão bem próximos.
+
 A priori isso pode representar algum avanço, porém preciso analisar melhor esse resultado e também encontrar alguma forma de encontrar um resultado melhor realizando mais dockings nesta região.
 
