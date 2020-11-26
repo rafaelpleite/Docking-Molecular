@@ -92,3 +92,24 @@ Em amarelo temos o Luteoin e o outro é o VIR250, perceba que estão bem próxim
 
 A priori isso pode representar algum avanço, porém preciso analisar melhor esse resultado e também encontrar alguma forma de encontrar um resultado melhor realizando mais dockings nesta região.
 
+
+## *26/11*
+Esse semana acrescentei no diário de bordo alguns links e editei alguns textos para que fiquem mais claros.
+Também, arrumei o códio joinpdqbt.py https://github.com/rafaelpleite/Docking-Molecular/blob/main/joinpdbqt.py, pois o mesmo dava erro quando havia uma sub pasta com arquivos .pdbqt dentro do diretório passado dentro do programa. Para fazer isso adicionei uma linha chamada "if root == path:" que garante que apenas a pasta passada na variável path será analisa e sub pastas serão ignoradas pelo programa.
+
+Implementar vizualização 3d de cluster.
+Gera pdbqt com nome.
+Implementar alguma forma de vizualizar os resultados da proina + ligante por notebook.
+Dinamica molecular.
+Estudar smina.
+
+
+
+
+
+
+
+
+
+
+
