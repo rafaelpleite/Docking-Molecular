@@ -7,14 +7,15 @@ Recebe um diretório com arquivos .pdbqt e retorna um único arquivo .pdbqt de t
 import os
 
 
-path = 'C:\SARSCOV2\OAII\LuteolinPLProPOOL\LuteolinPLpro\Teste\Resultados'
+path = 'C:\SARSCOV2\Favipiravir\FavipiravirPLpro\Teste\Resultado'
 
 def main():
     arc, data_load = str(), []
     for root, directories, files in os.walk(path, topdown=False):
-        for names in files:
-            if names.find('pdbqt') != -1:
-                for i in load(str(path + r'/b'[0] + names)): data_load.append(i)
+        if root == path:
+            for names in files:
+                if names.find('pdbqt') != -1:
+                    for i in load(str(path + r'/b'[0] + names)): data_load.append(i)
     for i, d in enumerate(data_load):
         arc = arc + str('MODEL ') + str(i+1) + d[1:] + '\n'
 
