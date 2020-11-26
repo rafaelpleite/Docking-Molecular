@@ -107,7 +107,7 @@ Estudar smina.
 
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="https://chart-studio.plotly.com/~rafael.pleite/1.embed">
 <head>
     <title>Welcome</title>
 </head>
@@ -116,6 +116,7 @@ Estudar smina.
     <hr />
     <p>Thanks for visiting.</p>
 </body>
+    https://chart-studio.plotly.com/~rafael.pleite/1.embed
 </html>
 
 
