@@ -100,16 +100,15 @@ Também, arrumei o códio joinpdqbt.py https://github.com/rafaelpleite/Docking-M
 
 Além disso, fiz o upload dos gráficos em 3d com a distribuição dos pontos.
 Energias <= 7.5;
-https://chart-studio.plotly.com/~rafael.pleite/1.embed
+<div>
+    <a href="https://plotly.com/~rafael.pleite/1/?share_key=hbJiCNdeSXX9OXSb0lkjKq" target="_blank" title="PLPRO-LUTEOLIN &lt;= 7.5" style="display: block; text-align: center;"><img src="https://plotly.com/~rafael.pleite/1.png?share_key=hbJiCNdeSXX9OXSb0lkjKq" alt="PLPRO-LUTEOLIN &lt;= 7.5" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="rafael.pleite:1" sharekey-plotly="hbJiCNdeSXX9OXSb0lkjKq" src="https://plotly.com/embed.js" async></script>
+</div>
 Cluster com KMeans;
-https://chart-studio.plotly.com/~rafael.pleite/3.embed
-
 <div>
     <a href="https://plotly.com/~rafael.pleite/3/?share_key=DGApr7ZbGWjSk0bUK6ZRMu" target="_blank" title="PLPRO-LUTEOLIN KMEANS" style="display: block; text-align: center;"><img src="https://plotly.com/~rafael.pleite/3.png?share_key=DGApr7ZbGWjSk0bUK6ZRMu" alt="PLPRO-LUTEOLIN KMEANS" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
     <script data-plotly="rafael.pleite:3" sharekey-plotly="DGApr7ZbGWjSk0bUK6ZRMu" src="https://plotly.com/embed.js" async></script>
 </div>
-
-
 Cluter com DBSCAN;
 
 
