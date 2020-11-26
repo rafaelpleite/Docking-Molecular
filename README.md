@@ -116,13 +116,6 @@ Cluster com KMeans;
 
 
 
-Implementar vizualização 3d de cluster.
-Gera pdbqt com nome.
-Implementar alguma forma de vizualizar os resultados da proina + ligante por notebook.
-Dinamica molecular.
-Estudar smina.
-
-
 
 
 
