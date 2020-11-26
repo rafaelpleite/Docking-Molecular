@@ -97,27 +97,29 @@ A priori isso pode representar algum avanço, porém preciso analisar melhor ess
 Esse semana acrescentei no diário de bordo alguns links e editei alguns textos para que fiquem mais claros.
 Também, arrumei o códio joinpdqbt.py https://github.com/rafaelpleite/Docking-Molecular/blob/main/joinpdbqt.py, pois o mesmo dava erro quando havia uma sub pasta com arquivos .pdbqt dentro do diretório passado dentro do programa. Para fazer isso adicionei uma linha chamada "if root == path:" que garante que apenas a pasta passada na variável path será analisa e sub pastas serão ignoradas pelo programa.
 
+
+Além disso, fiz o upload dos gráficos em 3d com a distribuição dos pontos.
+Energias <= 7.5;
+https://chart-studio.plotly.com/~rafael.pleite/1.embed
+Cluster com KMeans;
+https://chart-studio.plotly.com/~rafael.pleite/3.embed
+
+<div>
+    <a href="https://plotly.com/~rafael.pleite/3/?share_key=DGApr7ZbGWjSk0bUK6ZRMu" target="_blank" title="PLPRO-LUTEOLIN KMEANS" style="display: block; text-align: center;"><img src="https://plotly.com/~rafael.pleite/3.png?share_key=DGApr7ZbGWjSk0bUK6ZRMu" alt="PLPRO-LUTEOLIN KMEANS" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="rafael.pleite:3" sharekey-plotly="DGApr7ZbGWjSk0bUK6ZRMu" src="https://plotly.com/embed.js" async></script>
+</div>
+
+
+Cluter com DBSCAN;
+
+
+
+
 Implementar vizualização 3d de cluster.
 Gera pdbqt com nome.
 Implementar alguma forma de vizualizar os resultados da proina + ligante por notebook.
 Dinamica molecular.
 Estudar smina.
-
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~rafael.pleite/1.embed"></iframe>
-
-<!DOCTYPE html>
-
-<html lang="en" xmlns="https://chart-studio.plotly.com/~rafael.pleite/1.embed">
-<head>
-    <title>Welcome</title>
-</head>
-<body>
-    <h1>Django Site</h1>
-    <hr />
-    <p>Thanks for visiting.</p>
-</body>
-    https://chart-studio.plotly.com/~rafael.pleite/1.embed
-</html>
 
 
 
