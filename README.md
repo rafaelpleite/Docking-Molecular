@@ -103,10 +103,7 @@ Implementar alguma forma de vizualizar os resultados da proina + ligante por not
 Dinamica molecular.
 Estudar smina.
 
-https://chart-studio.plotly.com/~rafael.pleite/1.embed
-![https://chart-studio.plotly.com/~rafael.pleite/1.embed]
-
-https://chart-studio.plotly.com/~rafael.pleite/1/#/
+![PLPRO75](HTML/PLPRO-LUTEOLIN _= 7.5.HTML)
 
 
 
