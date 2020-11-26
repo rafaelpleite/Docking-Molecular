@@ -105,7 +105,20 @@ Estudar smina.
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~rafael.pleite/1.embed"></iframe>
 
+```html
+<h2>Example of code</h2>
 
+<pre>
+    <div class="container">
+        <div class="block two first">
+            <h2>Your title</h2>
+            <div class="wrap">
+            //Your content
+            </div>
+        </div>
+    </div>
+</pre>
+```
 
 
 
