@@ -104,7 +104,7 @@ Dinamica molecular.
 Estudar smina.
 
 https://chart-studio.plotly.com/~rafael.pleite/1.embed
-
+![https://chart-studio.plotly.com/~rafael.pleite/1.embed]
 
 
 
