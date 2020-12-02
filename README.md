@@ -117,7 +117,7 @@ Cluster com KMeans;
 
 
 
-
+O algoritmo de cluster funciona, porém preciso implementar uma forma para tratar o algoritmo que junta .pdbqt "join".
 
 
 
