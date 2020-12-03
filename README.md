@@ -116,8 +116,11 @@ Cluster com KMeans;
 
 
 
-
-O algoritmo de cluster funciona, porém preciso implementar uma forma para tratar o algoritmo que junta .pdbqt "join".
+## *02/12* 
+Essa semana começei tratando o algoritmo joinpdqbt.py, adicionei ao mesmo um recurso que filtra o valor da energia para adiciona-lo no arquivo .pdbqt criado. Com isso filtrei os valores <= -7.5 kcal/mol e gerei um .pdbqt com o arquivo da proteína. O resultado disto no foi a imagem abaixo.
+![0212IMEGEM1](Image/0212imagem1.PNG)
+Também temos uma imagem do cluster gerado pelo DBSCAN
+![0212IMEGEM2](Image/0212imagem2.PNG)
 
 
 
