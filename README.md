@@ -124,6 +124,10 @@ Também temos uma imagem do cluster gerado pelo DBSCAN
     <a href="https://plotly.com/~rafael.pleite/5/?share_key=rvOMtztMtF4Dc0DH7bjCNv" target="_blank" title="PLPRO-LUTEOLIN DBSCAN" style="display: block; text-align: center;"><img src="https://plotly.com/~rafael.pleite/5.png?share_key=rvOMtztMtF4Dc0DH7bjCNv" alt="PLPRO-LUTEOLIN DBSCAN" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
 </div>
 
+Isso prova que o algoritmo funciona! Realmente o centro de massa que o algoritmo calcula está certo para a proteíne. E mais, a clusterização também e razoável, os rúido classificado é razoável também. A priori isso é muito bom, porém nos próximos dias vamos seguir com mais análises com outros ligantes e outras proteínas para confirmar o que foi supracitado.
+
+Bem, por hoje é isso, amanhã pretendo seguir introduzindo um algoritmo símples de regressão linear utilizando a biblioteca Keras para tentar predizer a energia em função das posições espaciais para o mesmo ligante/proteína e dados analisados hoje, também com o filtro de <= 7.5 kcal/mol. É claro que eu não espero que o algoritmo de regressão linear faça predições precisas de energia, pois a função energia depende da conformação dos átomos na molécula, logo existem mais N variáveis para o problema e não apenas 3. Porém já é um começo de algo que no futuro pode se tornar uma predição mais precisa. 
+
 
 
 
