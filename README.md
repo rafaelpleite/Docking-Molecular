@@ -118,9 +118,11 @@ Cluster com KMeans;
 
 ## *02/12* 
 Essa semana começei tratando o algoritmo joinpdqbt.py, adicionei ao mesmo um recurso que filtra o valor da energia para adiciona-lo no arquivo .pdbqt criado. Com isso filtrei os valores <= -7.5 kcal/mol e gerei um .pdbqt com o arquivo da proteína. O resultado disto no foi a imagem abaixo.
-![0212IMEGEM1](Image/0212imagem1.PNG)
+![0212IMEGEM1](Image/0212imagem1.png)
 Também temos uma imagem do cluster gerado pelo DBSCAN
-![0212IMEGEM2](Image/0212imagem2.PNG)
+<div>
+    <a href="https://plotly.com/~rafael.pleite/5/?share_key=rvOMtztMtF4Dc0DH7bjCNv" target="_blank" title="PLPRO-LUTEOLIN DBSCAN" style="display: block; text-align: center;"><img src="https://plotly.com/~rafael.pleite/5.png?share_key=rvOMtztMtF4Dc0DH7bjCNv" alt="PLPRO-LUTEOLIN DBSCAN" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+</div>
 
 
 
