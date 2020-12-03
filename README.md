@@ -126,7 +126,7 @@ Também temos uma imagem do cluster gerado pelo DBSCAN
 
 Isso prova que o algoritmo funciona! Realmente o centro de massa que o algoritmo calcula está certo para a proteíne. E mais, a clusterização também e razoável, os rúido classificado é razoável também. A priori isso é muito bom, porém nos próximos dias vamos seguir com mais análises com outros ligantes e outras proteínas para confirmar o que foi supracitado.
 
-Bem, por hoje é isso, amanhã pretendo seguir introduzindo um algoritmo símples de regressão linear utilizando a biblioteca Keras para tentar predizer a energia em função das posições espaciais para o mesmo ligante/proteína e dados analisados hoje, também com o filtro de <= 7.5 kcal/mol. É claro que eu não espero que o algoritmo de regressão linear faça predições precisas de energia, pois a função energia depende da conformação dos átomos na molécula, logo existem mais N variáveis para o problema e não apenas 3. Porém já é um começo de algo que no futuro pode se tornar uma predição mais precisa. 
+Bem, por hoje é isso, amanhã pretendo seguir introduzindo um algoritmo símples de regressão linear utilizando a biblioteca Keras para tentar predizer a energia em função das posições espaciais para o mesmo ligante/proteína e dados analisados hoje, também com o filtro de <= 7.5 kcal/mol. É claro que eu não espero que o algoritmo de regressão linear faça predições precisas de energia, pois a função energia depende da conformação dos átomos na molécula, logo existem mais N variáveis para o problema e não apenas 3. Porém já é um começo de algo que no futuro pode se tornar uma predição mais precisa. Sem mais, vou dormir feliz.
 
 
 
