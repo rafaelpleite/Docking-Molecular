@@ -134,6 +134,8 @@ Um breve comentário sobre o que não esperar do resultado. Olha, é claro que e
 Como comentado ontém, hoje eu fiz a regressão linear dos meus dados utilizando o Keras. A análise pode ser encontrada na pasta Exemplos/Regressão simples. Como é possível ver pelos resultados houve um desvio-padrão de 1.32 kcal/mol, o que é péssimo para dados que estão entre 0 e -8.9, pois se trata de uma incerteza muito grande.
 
 ## *10/12* 
+Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diários passados, precisamos encontrar ferramentas para análisar os dados de cluster de maneira mais ágil. Começo introduzindo ferramentas para para o calcula do média, mediana, desvio-padrão e a ocupação energética por cluster. A ocupação energética por cluster pode ser definida como $\sum_{n=1}^{\infty}$
+
 
 ![1212IMG](Image/1212IMG.png)
 
