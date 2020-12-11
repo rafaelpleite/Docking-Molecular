@@ -140,3 +140,4 @@ Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diár
 
 ![1212IMG](Image/1212IMG.png)
 
+Com isso é imediato que a região 4 é uma região de interrese de uma análise mais profunda, pois é a que apresenta o menor nível de RMSD, maior nível energia, maior energia média/mediana e menor. 
