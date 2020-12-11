@@ -135,25 +135,7 @@ Como comentado ontém, hoje eu fiz a regressão linear dos meus dados utilizando
 
 ## *10/12* 
 
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-tex2jax: {
-inlineMath: [['$','$'], ['\\(','\\)']],
-processEscapes: true},
-jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
-extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
-TeX: {
-extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
-equationNumbers: {
-autoNumber: "AMS"
-}
-}
-});
-</script>
-
-
-Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diários passados, precisamos encontrar ferramentas para análisar os dados de cluster de maneira mais ágil. Começo introduzindo ferramentas para para o calcula do média, mediana, desvio-padrão e a ocupação energética por cluster. A ocupação energética por cluster pode ser definida como $\sum_{n=1}^{\infty}$
+Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diários passados, precisamos encontrar ferramentas para análisar os dados de cluster de maneira mais ágil. Começo introduzindo ferramentas para para o calcula do média, mediana, desvio-padrão e a ocupação energética por cluster. A ocupação energética por cluster pode ser definida como ![EQ101201](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bn%3D1%7D%5E%7B%5Cinfty%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 
 ![1212IMG](Image/1212IMG.png)
