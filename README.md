@@ -135,7 +135,7 @@ Como comentado ontém, hoje eu fiz a regressão linear dos meus dados utilizando
 
 ## *10/12* 
 
-Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diários passados, precisamos encontrar ferramentas para análisar os dados de cluster de maneira mais ágil. Começo introduzindo ferramentas para para o calcula do média, mediana, desvio-padrão e a ocupação energética por cluster. A ocupação energética por cluster pode ser definida como ![EQ101201](http://www.sciweavers.org/tex2img.php?eq=%5Csum_%7Bn%3D1%7D%5E%7B%5Cinfty%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diários passados, precisamos encontrar ferramentas para análisar os dados de cluster de maneira mais ágil. Começo introduzindo ferramentas para para o calcula do média, mediana, desvio-padrão e a porcentagem de ocupação energética por cluster. A porcentagem de ocupação energética de um cluster ν pode ser definida como ![EQ101201](http://www.sciweavers.org/tex2img.php?eq=%5C%25%20E%5E%7B%5Cnu%7D%20%3D%20100%20%5Cfrac%7B%20%5Csum_%7Bi%3D-1%7D%5E%7Bn%7D%20%7BE_i%7D%5E%7B%5Cnu%7D%7D%7BE_T%7D&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0), onde E_T é a energia total de todos os clusters. Além dessa implementação, também foi gerado gráficos do tipo box e violin para os valores de energia e RMSD. Feito isso, tomei intervalos energéticos de -7.5 -8.0 -8.5 para clusterização e obtemos a imagem abaixo para -7.5 kcal/mol.
 
 
 ![1212IMG](Image/1212IMG.png)
