@@ -133,4 +133,13 @@ Um breve comentário sobre o que não esperar do resultado. Olha, é claro que e
 ## *03/12* 
 Como comentado ontém, hoje eu fiz a regressão linear dos meus dados utilizando o Keras. A análise pode ser encontrada na pasta Exemplos/Regressão simples. Como é possível ver pelos resultados houve um desvio-padrão de 1.32 kcal/mol, o que é péssimo para dados que estão entre 0 e -8.9, pois se trata de uma incerteza muito grande.
 
+## *10/12* 
 
+Um comentário antes de começar, foi implementado uma novo parâmetro nos gráficos 3d que não o volume das bolhas, agora tais valores dependem do módulo da energia, com isso a visualização dos resultados foi aprimorada.
+
+Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diários passados, precisamos encontrar ferramentas para análisar os dados de cluster de maneira mais ágil. Começo introduzindo ferramentas para para o calcula do média, mediana, desvio-padrão e a porcentagem de ocupação energética por cluster. A porcentagem de ocupação energética de um cluster ν pode ser definida como ![EQ101201](http://www.sciweavers.org/tex2img.php?eq=%5C%25%20E%5E%7B%5Cnu%7D%20%3D%20100%20%5Cfrac%7B%20%5Csum_%7Bi%3D-1%7D%5E%7Bn%7D%20%7BE_i%7D%5E%7B%5Cnu%7D%7D%7BE_T%7D&bc=White&fc=Black&im=jpg&fs=12&ff=mathptmx&edit=0), onde E_T é a energia total de todos os clusters. Além dessa implementação, também foi gerado gráficos do tipo box e violin para os valores de energia e RMSD. Feito isso, tomei intervalos energéticos de -7.5 -8.0 -8.5 para clusterização e obtemos a imagem abaixo para -7.5 kcal/mol.
+
+
+![1212IMG](Image/1212IMG.png)
+
+Com isso é imediato que a região 4 é uma região de interrese de uma análise mais profunda, pois é a que apresenta o menor nível de RMSD, maior nível energia, maior energia média/mediana e menor. 
