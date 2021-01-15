@@ -26,7 +26,7 @@ Vamos analisar o primeiro modo (repare que houve um shift, uma subtração de me
 ![Resultado0411](Image/0411-Resultado.PNG)
 
 Temos duas ligações no sítio ativo, porém a energia de ligação é muito baixa.
-Para continuar vamos fazer um docking em várias partes da proteína e avaliar se existem outras posições em que a ligação pode ser realizada com um melhor gasto de energia. Para isso irei utilizar o algoritmo "Algoritmo Simulações AutoDock Vina" https://github.com/rafaelpleite/Docking-Molecular/blob/main/SimularAutodock.py .
+Para continuar vamos fazer um docking em várias partes da proteína e avaliar se existem outras posições em que a ligação pode ser realizada com um melhor gasto de energia. Para isso irei utilizar o algoritmo "Algoritmo Simulações AutoDock Vina" https://github.com/rafaelpleite/Docking-Molecular/blob/main/Algoritmos/SimularAutodock.py .
 
 ## *05/11* 
 Durante a noite eu deixei meu PC rodando o docking em várias partes da proteína e levou cerca de uma hora para completar o processo. As configurações do meu PC são: Ryzen 1600AF; 8 GB de ram DDR4; RX 570 8GB.
@@ -95,7 +95,7 @@ A priori isso pode representar algum avanço, porém preciso analisar melhor ess
 
 ## *26/11*
 Esse semana acrescentei no diário de bordo alguns links e editei alguns textos para que fiquem mais claros.
-Também, arrumei o códio joinpdqbt.py https://github.com/rafaelpleite/Docking-Molecular/blob/main/joinpdbqt.py, pois o mesmo dava erro quando havia uma sub pasta com arquivos .pdbqt dentro do diretório passado dentro do programa. Para fazer isso adicionei uma linha chamada "if root == path:" que garante que apenas a pasta passada na variável path será analisa e sub pastas serão ignoradas pelo programa.
+Também, arrumei o códio joinpdqbt.py https://github.com/rafaelpleite/Docking-Molecular/blob/main/Algoritmos/joinpdbqt.py, pois o mesmo dava erro quando havia uma sub pasta com arquivos .pdbqt dentro do diretório passado dentro do programa. Para fazer isso adicionei uma linha chamada "if root == path:" que garante que apenas a pasta passada na variável path será analisa e sub pastas serão ignoradas pelo programa.
 
 
 Além disso, fiz o upload dos gráficos em 3d com a distribuição dos pontos.
