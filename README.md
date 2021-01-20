@@ -143,3 +143,7 @@ Hoje vamos trabalhar um pouco com estátistica. Como o algoritmo funciona, diár
 ![1212IMG](Image/1212IMG.png)
 
 Com isso é imediato que a região 4 é uma região de interrese de uma análise mais profunda, pois é a que apresenta o menor nível de RMSD, maior nível energia, maior energia média/mediana e menor. 
+
+
+## *20/01*
+Realizei algumas alteração nos scripts para prosseguir com os estudos feitos no ano passado. A primeira alteração foi a algumas mudanças no script ![SimularAutodockWindowsLinux](https://github.com/rafaelpleite/Docking-Molecular/blob/main/Algoritmos/SimularAutodock_WL.py), agora o algoritmo pode ser executado em Python 3 utlizando Windows ou Linux como OS. Além do mais, o algoritmo fecha a janela do prompt de comando do Windows quando uma simulação de docking é finalizada, assim poupando memória RAM. Recomendo utilizar o algoritmo apenas em Linux se possível, na verdade, recomendo utilizar o Autodock Vina apenas no Linux, visto que pelos testes que eu realizei, testes que em breve serão disponibilizados aqui, rodar o Autodock Vina em ambiente Linux leva a metade do tempo para realizar o mesmo processo em Windows.
