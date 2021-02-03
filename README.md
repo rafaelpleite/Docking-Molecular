@@ -147,3 +147,15 @@ Com isso é imediato que a região 4 é uma região de interrese de uma análise
 
 ## *20/01*
 Realizei algumas alteração nos scripts para prosseguir com os estudos feitos no ano passado. A primeira alteração foi a algumas mudanças no script [SimularAutodockWindowsLinux](https://github.com/rafaelpleite/Docking-Molecular/blob/main/Algoritmos/SimularAutodock_WL.py), agora o algoritmo pode ser executado em Python 3 utlizando Windows ou Linux como OS. Além do mais, o algoritmo fecha a janela do prompt de comando do Windows quando uma simulação de docking é finalizada, assim poupando memória RAM. Recomendo utilizar o algoritmo apenas em Linux se possível, na verdade, recomendo utilizar o Autodock Vina apenas no Linux, visto que pelos testes que eu realizei, testes que em breve serão disponibilizados aqui, rodar o Autodock Vina em ambiente Linux leva a metade do tempo para realizar o mesmo processo em Windows.
+## *03/02*
+## Benchmark Autodock Vina: Windows ou Linux?
+Para testar o desempenho do Vina para simulações de docking entre os sistemas operacionais Windows e Linux realizou-se 728 simulações de docking em ambos os sitemas. Ambas as simulações foram feitas utilizando o mesmo algoritmo. Segue abaixo os resultados obtidos.
+
+
+| Sistema        | Simulações           | Tempo (s)  |
+| ------------- |:-------------:| -----:|
+| POP_OS! (Linux Kernel)      | 728 | 3761 |
+| Windows 10      | 728      |   9475 |
+O sistema utilizado foi um Ryzen 1600AF 6/12C à 3.2 GHz, 8 GB de memória ram rodando à 3000 MHz e um SSD SATA3.
+
+O resultado mostra que é visível a consolidação de um sistema Linux para a tarefas docking molecular com o Vina. Por isso, é indubitável que o kernel do Linux deve ser usado para tarefas desse tipo.
