@@ -156,6 +156,7 @@ Para testar o desempenho do Vina para simulações de docking entre os sistemas 
 | ------------- |:-------------:| -----:|
 | POP_OS! (Linux Kernel)      | 728 | 3761 |
 | Windows 10      | 728      |   9475 |
+
 O sistema utilizado foi um Ryzen 1600AF 6/12C à 3.2 GHz, 8 GB de memória ram rodando à 3000 MHz e um SSD SATA3.
 
 O resultado mostra que é visível a consolidação de um sistema Linux para a tarefas docking molecular com o Vina. Por isso, é indubitável que o kernel do Linux deve ser usado para tarefas desse tipo.
