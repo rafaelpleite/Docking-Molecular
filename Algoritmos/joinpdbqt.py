@@ -1,33 +1,27 @@
-"""
-@author: Rafael
-
-Recebe um diretório com arquivos .pdbqt e retorna um único arquivo .pdbqt de todos os resultados.
-"""
-
+import pandas as pd
 import os
 
+df = pd.read_csv(r'C:\Users\Rafael\Desktop\sitio_catalitico.csv')
+df = df[(df['Ligand'] == 'CN340')]
 
-#path = r'C:\SARSCOV2\OAII\LuteolinPLProPOOL\LuteolinPLpro\Teste\Resultados'
-path = input(str('Entre com o caminho: '))
+path = r'C:\Users\Rafael\Nanobio\Nsp15_dockings\OPT\pdbqt_opt_renew'
+protein = r'C:\Users\Rafael\Nanobio\Nsp15_dockings\OPT\6w01_prot.pdbqt'
+pdbqt = 'MODEL PROTEIN\n'
 
-def main():
-    arc, data_load = str(), []
-    for root, directories, files in os.walk(path, topdown=False):
-        for names in files:
-            if names.find('pdbqt') != -1:
-                for i in load(str(path + r'/b'[0] + names)): data_load.append(i)
-    for i, d in enumerate(data_load):
-        arc = arc + str('MODEL ') + str(i+1) + d[1:] + '\n'
+with open(protein) as p:
+    pdbqt += p.read()
+    p.close()
 
-    with open('ligand_out.pdbqt', 'w+') as f:
-        f.write(str(arc))
-
-
-def load(i):
-    data = ''
-    with open(i) as fp:
-        data = fp.read()
-    data = data.split('MODEL ')
-    data.pop(0)
-    return data
-main()
+for u in df[df.duplicated(subset=['Ligand']) == False]['Ligand']:
+    pdbqt += f'MODEL {u}\n'
+    df_u = df[df['Ligand'] == u]
+    for v in df_u[df_u.duplicated(subset=['Name']) == False]['Name']:
+        df_v = df_u[df_u['Name'] == v]
+        count = list(df_v['Count'])
+        path_uv = os.path.join(path, u, v + str('.pdbqt'))
+        with open(path_uv) as w:
+            data = w.read().split('MODEL ')
+            for x in count:
+                pdbqt += data[int(x)][2:]
+            w.close()    
+open(r'C:\Users\Rafael\Desktop\out.pdbqt', 'w+').write(pdbqt)
